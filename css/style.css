@@ -79,11 +79,12 @@ ul {
 
 .sub_nav {
     display: none;
+    position: absolute;
+    background-color: #A7FFD9;
+    width: 100%;
 }
 
 .nav_item {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 40px;
     background: #A7FFD9
@@ -115,6 +116,7 @@ a {
     border: 2px solid #ffff;
     border-radius: 10%;
     margin-right: 10px;
+    float: right;
 }
 
 .page_title {
@@ -486,20 +488,8 @@ a.btn_3 {
         top: 45px;
         background-color: #A7FFD9;
         border-radius: 5%;
+        width: fit-content;
     }
-    
-
-    /* Det her er absolut ikke den rigtige måde at gøre det på men jeg er lidt i tidskneb */
-
-    .sub_menu_1 {
-        right: 673px;
-    }
-
-    .sub_menu_2 {
-        right: 102px;
-    }
-
-    /*--------------------*/
 
     main {
         max-width: 80%;
