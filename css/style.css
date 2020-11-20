@@ -19,7 +19,9 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
+    border-bottom: 1px solid #707070;
 }
+
 
 /*---------- Menu BTN animation ----------*/
 
@@ -84,6 +86,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     height: 40px;
+    background: #A7FFD9
 }
 
 .nav_item a {
@@ -94,6 +97,7 @@ ul {
 
 .sub_nav_item {
     padding: 5px 15px;
+   
 }
 
 a {
@@ -114,26 +118,14 @@ a {
     margin-right: 10px;
 }
 
-/* ------- Mit er gældende fra 500px og til 290px ---------- */
 
-
-/* Hero img + text */
-/*
-main {
-    height: 430px;
-    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/workplace_small.jpg) no-repeat;
-    position: relative;
-    height: 275px;
-}
-*/
-/*---------- Page titles ----------*/
 
 .page_title {
     text-align: center;
-    margin: 40px 10px;
+    color: #707070;
 }
 
-/*---------------------------------*/
+}
 
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Workplace.jpg) center no-repeat;
@@ -179,6 +171,8 @@ a.btn {
     padding: 20px;
     color: #707070;
     margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 a.btn_2 {
@@ -191,10 +185,15 @@ a.btn_2 {
     transition: background-color .5s;
 }
 
-.box_header a {
+.box_header h3 {
     font-size: 25px;
     color: #ffff;
     text-decoration: underline;
+}
+
+.box_header {
+    font-size: 20px;
+    color: #ffff;
 }
 
 .box_header strong {
@@ -207,7 +206,7 @@ a.btn_2 {
 }
 
 .box:hover {
-    box-shadow: 4px 4px #707070;
+    box-shadow: 4px 4px #A7FFD9;
 }
 
 .container {
@@ -283,61 +282,132 @@ a.btn_3 {
 
 /* PAGE: Medlemsfordele */
 
+.medlemsoverskrift {
+    background: #31B37A;
+    padding: 20px;
+}
+
+
 .fordele {
     color: #707070;
     text-align: left;
     margin-left: 5px;
-}
-
-.fordele_overskrift {
-    text-align: center;
-    margin-top: 40px;
-}
-
-/* Footer */
-
-footer {
     background: #ffff;
 }
 
-/*--------- Event article styling ---------*/
 
-.event_info {
-    margin-top: 2.25em;
-    background-color: #ffff;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.event_info p {
-    color: #000000;
+.plusses {
+    color: red; 
+    color: #707070;
     text-align: left;
+    margin-left: 10px;
+    background: #ffff;
+    padding-bottom: 5px;
 }
 
-.event_info ul {
-    list-style-type: disc;
-}
-
-.article_section {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px auto;
-}
-
-.article_h3,
-.article_h2 {
-    background-color: #A7FFD9;
-    width: 100%;
+.btn4 {
+    color: #707070;
+    background: #ffff;
+    border: 1px solid #707070;
+    padding: 3px 3px;
     text-align: center;
+    transition: background-color .5s;
 }
 
+    
+
+
+/* Footer */
+
+.footer {
+    background: #BCFDE1;
+    color: #707070;
+    height: 400px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.footer .footer_content {
+    height: 350px; 
+    display: grid;
+}
+
+.footer .footer_content {
+    text-align: center; 
+}
+
+.footer h1 {
+    font-size: 20px;
+}
+
+
+.footer .footer_bottom {
+    background: #A7FFD9;
+    color: #707070;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    padding-top: 20px;
+    position: absolute;
+}
+
+
+/* Medium devices (landscape tablets, 688px and up) */
+@media only screen and (min-width: 688px) {
+
+    
+    .events {
+    text-align: center;
+    background: #A7FFD9;
+    padding: 20px;
+    color: #707070;
+    margin-top: 20px;
+}
+
+    .footer .footer_content {
+        height: 350px;
+        display: flex;
+        padding-top: 50px;
+    }
+    
+    .contact {
+        text-align: left;
+        margin-left: 5px;
+    }
+    
+    .social_media, .cookies, .cvr {
+        text-align: center;
+        margin-top: 200px;
+    }
+    
+    
+    .medlem {
+        text-align: center;
+    }
+    
+    .bullets {
+        text-align: center;
+        list-style-type: none;
+    }
+
+}
 
 /* Medium devices (landscape tablets, 780px and up) */
-@media only screen and (min-width: 780px) {}
+@media only screen and (min-width: 780px) {
+    
+    
+.contact {
+        text-align: left;
+        margin-top:100px;
+        margin-left: 5px;
+    }
+    
+    .social_media, .cookies, .cvr {
+        text-align: center;
+        margin-top:220px;
+        flex: 4;
+    }
+}
 
 
 /* Large devices (laptops/desktops, 1075px and up) */
@@ -379,6 +449,11 @@ footer {
         background-color: #A7FFD9;
         border-radius: 5%;
     }
+    
+
+ 
+    
+    
 
     /* Det her er absolut ikke den rigtige måde at gøre det på men jeg er lidt i tidskneb */
 
